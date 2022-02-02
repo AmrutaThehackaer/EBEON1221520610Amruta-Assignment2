@@ -1,0 +1,71 @@
+Question 2: Follow naming convention rule
+            Write a program to find the sum and product of all elements of an array.
+Answer:
+
+package Assignment2;
+
+import java.util.Scanner;
+
+public class Question2{
+
+	public static void main(String[] args) {
+	
+		   int arrNumber;
+		   int Sum =0;
+		   int Product=1;
+		   Scanner sc=new Scanner(System.in);
+		   System.out.println("Enter Number of Array Element: ");
+		   arrNumber= sc.nextInt();
+		   
+		   int newArray[]=new int[arrNumber];
+		   
+		   System.out.println(" Enter All Array Element:");	
+		   
+		   
+		   for(int i = 0;i < newArray.length; i++) {
+		    System.out.println(" Enter array value:");
+		    newArray[i] = sc.nextInt();
+		   }
+		   
+		   System.out.print(" Enter All Array Element:");	
+		   
+		   for(int i = 0;i < newArray.length; i++){
+			    System.out.println(newArray[i]);
+		   }
+			 
+		   for(int i = 0;i < newArray.length; i++){
+			    Sum = Sum + newArray[i];
+		   }
+			 
+		   for(int i = 0;i < newArray.length; i++){
+			    Product = Product + newArray[i];
+		   }
+			 System.out.println();
+			 System.out.println("Sum of All Array Elements is: " + "[" + Sum +"]");
+			 System.out.println("Product of All Array Elements is: " + "[" + Product +"]");
+		   }
+	}
+Output:
+Enter Number of Array Element: 
+5
+ Enter All Array Element:
+ Enter array value:
+12
+ Enter array value:
+9
+ Enter array value:
+6
+ Enter array value:
+13
+ Enter array value:
+15
+ Enter All Array Element:12
+9
+6
+13
+15
+
+Sum of All Array Elements is: [55]
+Product of All Array Elements is: [56]
+
+
