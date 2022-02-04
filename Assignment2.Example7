@@ -1,0 +1,57 @@
+Question7:Following naming conventio rule
+         -write Program to insert first 10 prime number in integer array?
+Answer:
+package Assignment2;
+
+import java.util.Scanner;
+
+public class Question7 {
+public static void main(String[] args) {
+	    int arraySize;
+	    int count=0;
+	    Scanner sc= new Scanner (System.in);
+		System.out.println("Enter the size of the array: ");
+		arraySize = sc.nextInt();
+	    int[] array = new int [10];
+	    System.out.println("Enter array elements: ");
+	    for(int i=0; i<arraySize; i++)
+	    {
+	        array[i] = sc.nextInt();
+	    }
+	    System.out.println("  All prime Number:");	
+	    for(int i=0; i<=arraySize; i++){
+	        //boolean isPrime = true;
+	    	   count=0;
+	           for (int j=2; j<i; j++){
+               if(i%j==0){
+            	   count++;
+            	break;
+	            }
+	        } if(count == 0)
+
+	            System.out.println(i + " ");
+	    }
+	}
+}
+output:
+Enter the size of the array: 
+10
+Enter array elements: 
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+  All prime Number:
+0 
+1 
+2 
+3 
+5 
+7 
+
